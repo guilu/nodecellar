@@ -9,7 +9,7 @@ db = new Db('winedb', server, {safe: true});
 
 db.open(function(err, db) {
     if(!err) {
-        console.log("Connected to 'winedb' database");
+        console.log("Connected to 'winedb' database, no user no password");
         db.collection('wines', {safe:true}, function(err, collection) {
             if (err) {
                 console.log("The 'wines' collection doesn't exist. Creating it with sample data...");
